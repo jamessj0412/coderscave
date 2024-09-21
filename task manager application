@@ -1,0 +1,19 @@
+Key Features:
+User Authentication: Simple login/logout.
+Dashboard: To display and organize tasks by categories.
+Task Management: Users can create, edit, delete tasks, and set deadlines.
+Categorization: Tasks are organized by categories (e.g., work, personal).
+Application Breakdown:
+1. User Authentication:
+The login is simple and front-end based for now, without password storage or protection (this would require backend logic for secure handling).
+A user enters their username and proceeds to the task dashboard.
+2. Task Management:
+Users can input the task name, deadline, and category.
+After adding the task, it appears in a task list with the task name, deadline, and category.
+Tasks can be deleted.
+3. Task Organization:
+Tasks are organized by categories chosen from the dropdown.
+You can extend this by adding category filters on the dashboard view.
+4. Dashboard:
+The dashboard displays the tasks that the user has added.
+It also allows users to log out, bringing them back to the login screen.
