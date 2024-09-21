@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="tt.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your username">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Dashboard Screen -->
+    <div id="dashboard" style="display:none;">
+        <header>
+            <h1>Task Dashboard</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+        <section>
+            <div id="task-input">
+                <h2>Add a New Task</h2>
+                <input type="text" id="task-name" placeholder="Task Name">
+                <input type="date" id="task-deadline">
+                <select id="task-category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <div id="task-list">
+                <h2>Task List</h2>
+                <div id="tasks-container"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="tt.js"></script>
+</body>
+</html>
