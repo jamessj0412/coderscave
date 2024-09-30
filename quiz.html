@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Quiz</h1>
+
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. Which type of web development allows for both front-end and back-end development using a single language?</p>
+                <label><input type="radio" name="q1" value="a"> Cross-platform development</label><br>
+                <label><input type="radio" name="q1" value="b"> Multi-language development</label><br>
+                <label><input type="radio" name="q1" value="c"> Full-stack development</label><br>
+                <label><input type="radio" name="q1" value="d"> Hybrid development</label><br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is Node.js primarily used for?</p>
+                <label><input type="radio" name="q2" value="a"> Styling web pages</label><br>
+                <label><input type="radio" name="q2" value="b"> Building server-side applications with JavaScript</label><br>
+                <label><input type="radio" name="q2" value="c"> Managing  databases</label><br>
+                <label><input type="radio" name="q2" value="d"> Designing front-end interfaces</label><br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3.  What is "Spring Boot" in Java development??</p>
+                <label><input type="radio" name="q3" value="a"> A front-end design library</label><br>
+                <label><input type="radio" name="q3" value="b"> A JavaScript framework</label><br>
+                <label><input type="radio" name="q3" value="c"> A framework for building and running Java-based applications with minimal configuration</label><br>
+                <label><input type="radio" name="q3" value="d"> A Java testing tool</label><br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <!-- Result Section -->
+        <div id="result" class="hidden">
+            <h2>Your Result:</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Retake Quiz</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
